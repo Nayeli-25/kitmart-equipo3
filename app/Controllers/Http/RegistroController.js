@@ -57,6 +57,13 @@ class RegistroController {
         return registro
     }
 
+    async temperaturaRefri () {
+        const sensor = await Sensor.where({'nombre': 'temperatura_refrigerador'}).fetch()
+        const sensorJson = sensor.toJSON()
+        const registro = await Registro.where({'sensorId': sensorJson[0]._id}).sort({created_at: -1}).limit(1).fetch()
+        return registro
+    }
+
     async temperatura () {
         const sensor = await Sensor.where({'nombre': 'temperatura_casa'}).fetch()
         const sensorJson = sensor.toJSON()
@@ -92,10 +99,9 @@ class RegistroController {
         return registro
     }
 
-    async updateLed ({params}){
+    async updateEstado ({params}){
         const sensor = await Sensor.where({'_id': params.id}).update({ 'estado': params.estado })
-        return sensor
-            
+        return sensor       
     }
 
     async fecha() {

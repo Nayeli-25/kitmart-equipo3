@@ -18,10 +18,11 @@ Route.group(() => {
     Route.delete('user', 'UserController.destroy')
     Route.post('logout', 'AuthController.logout')
     //Sensores
-    Route.post('sensor','SensorController.store')
     Route.get('sensor/:id?','SensorController.index')
+    Route.post('sensor','SensorController.store')
     Route.get('sensores/:tipo','SensorController.sensoresPorTipo')
     Route.delete('sensor/:id','SensorController.destroy')
+
     //Registros
     Route.get('registro/:sensorId?','RegistroController.index')
     Route.post('registro','RegistroController.store')
@@ -34,13 +35,15 @@ Route.group(() => {
     Route.get('temperatura','RegistroController.temperatura')
     Route.get('temperaturas','RegistroController.temperaturas')
 
-    Route.get('estado','RegistroController.estadoRefri')
+    Route.get('temperaturaRefri','RegistroController.temperaturaRefri')
+    Route.get('estadoRefri','RegistroController.estadoRefri')
 
     Route.get('humedad','RegistroController.humedadPlantas')
     Route.get('humedades','RegistroController.humedadesPlantas')
 
     Route.get('prevencionAccidentes','RegistroController.prevencionAccidentes')
-    Route.put('leds/:id/:estado','RegistroController.updateLed')
+
+    Route.put('estado/:id/:estado','RegistroController.updateEstado')
     
     //Recetas
     Route.get('receta/:id?','RecetaController.index')
@@ -58,7 +61,10 @@ Route.group(() => {
   }).prefix('api').middleware('auth')
 
 
-
-  Route.get('pendientes','SensoresEjemploController.index')
+  Route.get('pendientes','SensorController.index')
 
   Route.get('recetas/:id?','RecetaController.index')
+
+  Route.get('sensor/:id?','SensorController.index')
+
+  Route.post('registro','RegistroController.store')
