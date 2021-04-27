@@ -1,0 +1,50 @@
+<div class="container">
+<div class="row">
+
+<div class="col">
+<img src="assets/medioColoresLado.png"  class="position-absolute top-0 end-0 sizeMedColor">
+</div>
+
+<div class="col">
+<img src="/assets/iluMed.png" class="posCabecera position-absolute top-0 start-50 d-none d-sm-none d-md-block">
+</div>
+
+    <div class="social-bar posSocial-bar">
+      <a href="/home" class="icon btn start-0"><img class="img1" src="/assets/ICO-volver.png">volver</a>    
+     </div>
+
+<div class="row">
+    <div class="col-md-5 "></div>
+<div class="col-md-5 position-absolute start-50 top-50 divForm scroll">
+<div *ngFor="let led of leds" >
+    <table>
+        <tr>
+            <th><img src="/assets/ICO-foco.png" class="img"> </th>
+            <th style="width:600px;"> Foco </th>
+            <th style="width:300px;"> Estado </th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td style="margin-left:50px;"> {{led.nombre}} </td>
+            <td *ngIf="(led.estado=='1')"> Encendido </td>
+            <td *ngIf="(led.estado=='0')"> Apagado </td>
+            <td style="margin-left:20px;"> <button class="btn btn-lg btn-success btn-block mb-2 btnPos" style="font-size:15px;" (click)="cambiaEstado(led._id, '1')">on</button> </td>
+            <td style="margin-left:20px;"> <button class="btn btn-lg btn-danger btn-block mb-2 btnPos" style="font-size:15px;" (click)="cambiaEstado(led._id, '0')">off </button> </td>
+         <hr>   
+        </tr>        
+    </table>
+</div>
+</div>
+ <div class="col-md-5 "></div>
+</div>
+
+
+<footer class="row">
+
+<img class="pie2 col-md-5 position-absolute bottom-0 start-0 d-none d-sm-none d-md-block" src="/assets/esquinaColores.png">
+
+<!--<img class="pie1 col-md-4 d-none d-sm-none d-md-block position-absolute bottom-0 end-0" src="/assets/pie1.png" >-->
+
+
+
+</footer> 

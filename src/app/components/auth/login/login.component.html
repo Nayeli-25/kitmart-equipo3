@@ -1,0 +1,58 @@
+<div class="background">
+<div class="container">
+  <div class="row">
+ <div class="mediaLuna position-absolute top-0 start-0 d-none d-sm-none  d-md-block"></div>
+ 
+     <img src="assets/ICO-kitmart.png"class="logoKit position-absolute start-0">
+  </div>     
+    
+<!-- Formulario-->
+
+ <div class="formPrincipal position-absolute top-0 start-0">
+<form
+          class="form-signin animated fadeIn"
+          autocomplete="off"
+          [formGroup]="loginForm"
+          (ngSubmit)="login()"
+        >
+        <!--  <h2 class="mb-3 font-weight-normal text-dark">Sign in</h2>-->
+          <label class="sr-only text-muted" for="inputEmail">Email Address</label>
+          <input
+            type="email"
+            class="form-control mb-3"
+            id="inputEmail"
+            placeholder="Email Address"
+            formControlName="email"
+            [class.is-invalid]="emailValidate"
+          />
+          <label class="sr-only text-muted" for="inputPassword">Password</label>
+          <input
+            type="password"
+            class="form-control mb-3"
+            id="inputPassword"
+            placeholder="Password"
+            formControlName="password"
+            [class.is-invalid]="passwordValidate"
+          />
+          <button type="submit" class="btn btn-lg btn-primary mb-2">
+            Sign in
+          </button>
+          <p></p>
+          <a class="fs-6"[routerLink]="['/registro']">Don't you have an account?</a>
+          <p class="mt-4 mb-3 text-muted">© Escuadron Z - 2021</p>
+        </form>
+</div>
+
+</div>
+    <!-- Imagenes de formas -->
+  <img src="assets/rectanguloVertical.png" class="rectanguloVertical position-absolute top-0 end-0 d-none d-sm-none d-md-block">
+  <img src="assets/rectanguloHorizontal.png" class="position-absolute top-0 end-0 d-none d-sm-none d-md-block" >
+  <img src="assets/rectanguloPeque.png" class="position-absolute bottom-0 end-0" >
+  <img src="assets/logoZ.png"  class="ICOz position-absolute bottom-0 end-0" >
+
+<button style="margin-top:637px;color: rgb(51,199,255);" class="btn">hola</button>
+</div>
+
+
+
+

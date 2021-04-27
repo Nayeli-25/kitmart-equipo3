@@ -1,0 +1,110 @@
+.sizeMedColor{width:300px;
+              height:500px;margin-left:-100px;
+              margin-top: 150px;
+             }
+
+
+.posCabecera{margin-top:-28px;
+             margin-left:-350px;
+             width:650px;
+             height:350px ;
+            }
+
+  .pie2{
+        margin-bottom:-0px;
+        margin-left:-10px;
+        width:280px ;
+        height:280px ;
+  }
+
+.pie1{
+      margin-bottom:-00px;
+      width:170px ;
+      height:150px ;
+      margin-right:-10px;
+}
+.scroll{
+	overflow:scroll; 
+	height: 660px;
+	display: block;
+  scroll-behavior: smooth;
+}
+
+.tam{
+  height:100px;
+}
+
+.btnGrey{background-color:#DCDCDC;}
+.color{color: rgb(34, 70, 125);}
+
+.posSocial-bar{right:0;
+            top: 0%;
+               font-size: 1.9rem;
+               margin-right: -13px;
+             }
+
+
+.t1{font-size: 18px; width:410px;}
+
+.btnPos{border-radius:60px;
+          height:50px;
+          width:50px;
+          margin-right:-110px;
+          font-size: 20px; 
+}
+.imgChek{width: 30px;height: 30px;}
+
+.social-bar { position: fixed;
+      right: 0;
+        top: 0%; 
+        font-size: 1.9rem;
+    display: flex;  
+    flex-direction: column; 
+    align-items: flex-end;  
+    z-index: 100;}
+.pend{width: 350px; margin:30px;}
+.btnPend{ background:rgb(43, 170, 162);margin:30px;}
+
+.icon { color: white; 
+  background-color: rgb(34, 217, 155) ;
+  text-decoration: none;  
+  padding: .7rem; display: flex;  
+  transition: all .5s;
+} 
+
+
+.icon:first-child { border-radius: 1rem 0 0 0;} 
+
+.icon:last-child {  border-radius: 0 0 0 1rem;} 
+
+.icon:hover { padding-right: 3rem;  
+  border-radius: 1rem 0 0 1rem; 
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);}
+.img{
+    width:35px;
+    height: 35px;
+    margin-right: 21px;
+}
+.img1{
+    width:28px;
+    height: 25px;
+    margin-right: 21px;
+}
+
+.divForm{
+		margin-bottom:0px;
+		margin-top:0px; }
+
+.form{ 
+	margin-left:0px;
+	}
+
+  .si{
+    background-color: rgba(188, 143, 143, 0.842);
+    margin: 2%;
+    float: right;
+  }
+  .no{
+    background-color:rgba(0, 158, 0, 0.685);
+    margin: 2%;
+  }

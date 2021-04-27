@@ -1,0 +1,72 @@
+.background {
+     background-color:rgb(51,199,255);
+     display: flex;
+     flex-direction:column;
+     height: 100%;
+  }
+.flex-container {
+    display: flex;flex-direction: column;height: 100%;
+}
+  .div{
+    opacity: 0.9;
+    border-radius: 2px;
+    width:30%;
+    min-width: 400px;
+    float: left;
+   }
+   
+  .img {
+    width: 80%;
+    margin: 10%;
+  }
+
+  .img2 {
+    width: 70%;
+    min-width: 800px;
+  }
+   
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+   
+  .form-signin .form-control {
+    height: 45px;
+  }
+
+
+.mediaLuna{
+      background-color:#ffff;
+      margin-left:-500px;
+      margin-top:-5px;
+      margin-bottom:-1000px;
+      width:900px;
+      height:670px;
+      border-radius:400px;
+      padding: 30px;
+  
+       }
+
+.logoKit{margin-left:20px;
+          margin-top:5px;
+          width:280px ;
+          height:310px ;
+}
+.formPrincipal{width: 300px; 
+                 margin-top:300px;
+                 margin-left:5px;
+    }
+
+.rectanguloVertical{
+  margin-right: 500px;
+}
+.ICOz{
+   width: 120px; 
+   height: 140px; 
+   margin-right: 10px;
+   margin-bottom:5px;
+  
+}
+

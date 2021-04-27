@@ -1,0 +1,85 @@
+
+<div class="container">
+<div class="row">
+
+<div class="col">
+<img src="assets/medioColoresLado.png"  class="position-absolute top-0 end-0 sizeMedColor">
+</div>
+
+<div class="col">
+<img src="/assets/contMed.png" class="posCabecera position-absolute top-0 start-50 d-none d-sm-none d-md-block">
+</div>
+
+    <div class="social-bar posSocial-bar">
+      <a href="/home" class="icon btn start-0"><img class="img1" src="/assets/ICO-volver.png">volver</a>    
+     </div>
+
+<footer class="row">
+
+<img class="pie2 col-md-5 position-absolute bottom-0 start-0 d-none d-sm-none d-md-block" src="/assets/esquinaColores.png">
+
+<!--<img class="pie1 col-md-4 d-none d-sm-none d-md-block position-absolute bottom-0 end-0" src="/assets/pie1.png" >-->
+
+
+
+</footer> 
+
+<div class="accordion form position-absolute start-0 top-50 " id="accordionExample">
+    <div class="accordion-item ">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button btnGrey " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img class="img"src="/assets/refrigerador.png">
+          Refrigerador
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show"  aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+        <div class="accordion-body " *ngFor="let registroR of registrosRefrigerador" >
+
+          <div *ngFor="let temp of temperaturaRefri" style="float: right;">
+            <img src="assets/termometro.jpg" style="max-width: 8%; float: right;">
+            <h4 style="float: right;"> {{temp.valor}}°C </h4>
+          </div>
+
+          <p> Estado actual: {{registroR.valor}} </p>
+            
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button btnGrey " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><img class="img"src="/assets/estufa.png">
+          Prevención contra accidentes
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" >
+        
+          <div *ngIf="(show == 'false')">
+            <button class="btn no" (click)="cambiaEstado(idUltrasonico, '1')"> Activar Modo Seguro </button> 
+          </div>
+          <div *ngIf="(show == 'true')">
+            <button class="btn si" (click)="cambiaEstado(idUltrasonico, '0')"> Desactivar Modo Seguro </button>
+            
+            <div class="accordion-body " *ngFor="let registroU of registrosUtrasonico" >
+              <div>
+                <p *ngIf="(registroU.valor<=15)"> {{registroU.fecha}} -> Peligro, hay alguien cerca </p>
+                <p *ngIf="(registroU.valor>15)"> {{registroU.fecha}} -> No hay nadie cerca</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button btnGrey " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><img class="img"src="/assets/plaga.png">
+          Control de Plagas
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
+        <div class="accordion-body" *ngFor="let registroP of registrosPlagas" >
+            <p> {{registroP.fecha}} -> {{registroP.valor}} </p>
+        </div>
+      </div>
+    </div>
+</div>
+
+

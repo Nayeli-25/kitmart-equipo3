@@ -1,0 +1,45 @@
+button{
+    margin: 3%;
+}
+
+
+.sizeMedColor{width:300px;
+              height:500px;margin-left:-100px;
+             }
+
+
+.posCabecera{margin-top:-28px;
+             margin-left:-38px;
+             width:468px;
+            }
+
+  .pie2{
+        margin-bottom:-0px;
+        margin-left:-10px;
+        width:280px ;
+        height:250px ;
+  }
+
+.pie1{
+      margin-bottom:-00px;
+      width:170px ;
+      height:150px ;
+      margin-right:-10px;
+}
+
+.btnHistorial{background-color: #ced7d3;
+	width:150px;
+	height:150px;
+	padding: 5px;
+}
+
+.img{width:100px;
+     height: 100px;}
+
+
+.scroll{
+	overflow:scroll; 
+	height: 400px;
+	display: block;
+  scroll-behavior: smooth;
+}

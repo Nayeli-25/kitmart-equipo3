@@ -1,0 +1,44 @@
+
+<div class="container">
+<div class="row">
+
+<div class="col">
+<img src="assets/medioColoresLado.png"  class="position-absolute top-0 end-0 sizeMedColor">
+</div>
+
+<div class="col">
+<img src="/assets/ambMed.png" class="posCabecera position-absolute top-0 start-50 d-none d-sm-none d-md-block">
+</div>
+
+    <div class="social-bar posSocial-bar">
+      <a href="/home" class="icon btn start-0"><img class="img1" src="/assets/ICO-volver.png">volver</a>    
+     </div>
+
+
+<div class="divForm position-absolute start-50 top-50">
+<div *ngFor="let hum of humedad" class="form">
+    
+    <p class="t1"><img class="img" src="/assets/humedad.png">Estado actual: <b>{{hum.valor}}</b></p>
+    <p *ngIf="(hum.valor == 'plantas hidratadas')" style="font-size:15px;" class="text-success alert alert-success"><b>Tus plantas están bien.</b></p>
+    <p *ngIf="(hum.valor == 'plantas secas')" style="font-size:15px;" class="text-danger alert alert-danger"><b>Tus plantas necesitan agua.</b></p>
+    <hr>
+    <div class="text-center">
+        <h5>Información Importante</h5>
+        <p>Descubre todo acerca del cuidado de tus plantas.</p>
+        <button class="btn btn-lg btnAzul btn-block mb-2">
+            <a href="https://www.verdeesvida.es/" target="_blank"> Más sobre plantas </a>  
+        </button>
+    </div>
+    
+</div>
+</div>
+
+<footer class="row">
+
+<img class="pie2 col-md-5 position-absolute bottom-0 start-0 d-none d-sm-none d-md-block" src="/assets/esquinaColores.png">
+
+<!--<img class="pie1 col-md-4 d-none d-sm-none d-md-block position-absolute bottom-0 end-0" src="/assets/pie1.png" >-->
+
+
+
+</footer> 

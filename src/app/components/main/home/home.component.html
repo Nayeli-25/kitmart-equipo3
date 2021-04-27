@@ -1,0 +1,134 @@
+
+<div *ngFor="let temp of temperatura">
+    <div class="social-bar posSocial-bar">
+    <button class="icon social-bar btn btn-success" > Temperatura: {{temp.valor}}°C </button>
+</div>
+<div class="container">
+<div class="row">
+
+<div class="col-md-2">
+<img src="assets/medioColoresLado.png"  class="position-absolute top-0 end-0 sizeMedColor">
+</div>
+<div class="col-md-2">
+<img src="/assets/ICO-cabecera.png" class="posCabecera position-absolute top-0 start-0 d-none d-sm-none d-md-block">
+
+</div>
+</div>
+</div>
+
+ <div class="row ">
+<img src="/assets/horigam1.png" class="horigami position-absolute top-50 start-50 d-none d-sm-none d-md-block">
+ 
+ <div class="textMain col-md-6 position-absolute top-50 end-50 "><h2>Kitmart</h2><p>Encuentra toda Información extra de la que solo puedes disponer aquí por tu propia seguridad.
+ </p><p>Kitmart ofrece un espacio amplio lleno de comodidades para todos sus usuarios, formado por un equipo especial para gente especial.</p></div>
+
+ <img src="/assets/IMG-varioss.png" class="varios position-absolute top-50 start-0 d-none d-sm-none d-md-block">
+  </div>
+ 
+<img src="/assets/sider C.png" class="ondas position-absolute top-50 end-0 d-none d-sm-none d-md-block">
+ 
+ <div class="textDoble row position-absolute top-50 start-0">
+    <div class="col sizeTexts"></div>
+    <div class="col sizeTexts">
+
+     <ul>
+       <li>Control.</li>
+       <li>Funcionalidad.</li>
+       <li>Cocina inteligente.</li>
+       <li>Todo al alcance de un clic.</li>
+     </ul>
+    </div>
+
+
+    <div class="col sizeTexts">
+       <ul>
+       <li>Control.</li>
+       <li>Funcionalidad.</li>
+       <li>Cocina inteligente.</li>
+       <li>Todo al alcance de un clic.</li>
+     </ul>
+    </div>
+<div class="col sizeTexts"></div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="col-md-6 col-sm-2  position-absolute bottom-0 start-50 btn-group" style="text-align: center; margin-left:-350px;margin-bottom:-810px;">
+
+<button type="submit" class="btn btn-lg  btn-block mb-2"style="background-color: rgb(253, 163, 9);height:120px;" [routerLink]="['/pendientes']"><img style="padding:10px;width:100px ;height:100px ;" src="/assets/icos-blancos/ico-nota.png"></button>
+
+  <a href="/pendientes" class="btn  d-none d-sm-none  d-md-block" style="background-color:  rgb(249, 216, 163,.7);width:1000px;height:120px;color:#F99E00"><h4>Pendientes</h4><p >Tener un control de tus ideas y tarea es más que importante en este mundo tan atareado, descúbrelo y actualízate teniendo todo al alcance de un clic.</p></a>
+  
+</div>
+
+
+
+
+<div class="row">
+<div class="col-md-6 col-sm-2  position-absolute bottom-0 start-50 btn-group" style="text-align: center; margin-left:-350px;margin-bottom:-928px;">
+  <a href="/plantas" class="btn  d-none d-sm-none  d-md-block" style="background-color:  rgb(138, 173, 59,.7);width:1000px;height:117px;color: #4E9A80;"><h4>Ambiente</h4><p >El cuidado de tus plantas a cargo de kitmart nunca había sido mál facíl, descúbrelo y actualízate teniendo todo al alcance de un clic.</p></a>
+  <button type="submit" class="btn btn-lg btn-block mb-2" style="background-color: rgb(138, 173, 59);" [routerLink]="['/plantas']"><img style="padding:10px;width:100px ;height:100px ;" src="/assets/icos-blancos/icos-plant.png"></button>  
+</div>
+</div>
+
+
+
+
+<div class="row">
+
+<div class="col-md-6 col-sm-2  position-absolute bottom-0 start-50 btn-group" style="text-align: center; margin-left:-350px;margin-bottom:-1045px;">
+  <button type="submit" class="btn btn-lg btn-block mb-2" [routerLink]="['/iluminacion']" style="background-color: rgb(34, 217, 155);"><img style="padding:10px;width:100px ;height:100px ;" src="/assets/icos-blancos/ico-iluminacion.png"></button>
+  <a href="/iluminacion" class="btn  d-none d-sm-none  d-md-block" style="background-color:  rgb(34, 217, 155,.5);width:1000px;height:118px;color:#1AB984"><h4>Iluminación</h4><p >Lo de ahora es controlar todo desde tu móvil, descúbrelo y actualízate teniendo todo al alcance de un clic.</p></a>
+  
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-md-6 col-sm-2  position-absolute bottom-0 start-50 btn-group" style="text-align: center; margin-left:-350px;margin-bottom:-1162px;"> 
+ <a href="/espacios" class="btn  d-none d-sm-none  d-md-block" style="background-color:  rgb(43, 170, 162,.7);width:1000px;height:117px;color: #1795A8;"><h4>Control de Espacios</h4><p>Lo de ahora es controlar todo desde tu movíl, descúbrelo y actualízate teniendo todo al alcance de un clic.</p></a>
+  <button type="submit" class="btn btn-lg btn-block mb-2" [routerLink]="['/espacios']" style="background-color: rgb(43, 170, 162);" > <img style="padding:10px;width:100px ;height:99px ;" src="/assets/icos-blancos/ico-control.png"> </button>
+ 
+ 
+
+  
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="col-md-6 col-sm-2  position-absolute bottom-0 start-50 btn-group" style="text-align: center; margin-left:-350px;margin-bottom:-1280px;">
+  <button type="submit" class="btn btn-lg btn-block mb-2" [routerLink]="['/recetas']" style="background-color: rgb(34, 70, 125);"> <img style="padding:10px;width:100px ;height:100px ;" src="/assets/icos-blancos/ico-menu.png"></button>
+  <a href="/recetas" class="btn  d-none d-sm-none  d-md-block" style="background-color:  rgb(34, 70, 125,.7);width:1000px;height:117px;color:#084D6B;"><h4>Menú</h4><p>Guarda tus recetas y descubre nuevas, así diseñarás el menú apropiado para ti y tus necesidades, descúbrelo teniendo todo al alcance de un clic.</p></a>
+  
+</div>
+</div>
+
+
+
+
+<footer class="row">
+
+<img class="pie2 col-md-5 position-absolute bottom-0 start-0 d-none d-sm-none d-md-block" src="/assets/pie2.png">
+
+<img class="pie1 col-md-4 d-none d-sm-none d-md-block position-absolute bottom-0 end-0" src="/assets/pie1.png" >
+
+<p class="p col-md-3 col-sm-2 position-absolute bottom-0 start-50 text-muted">Equipo Escuadron Z 2021 <br> Todos los derechos reservados.</p>
+
+<img class="Zpie col-md-4 col-sm-2 position-absolute bottom-0 end-50" src="/assets/logoZ.png" >
+
+</footer> 
+
+    <table style="margin-top: 2317px;">
+        <tr>
+        </tr>
+        <tr>
+            <td> <button type="submit" class="btn btn-lg  btn-block mb-2" >  </button> </td>
+            <td>  </td>
+        </tr>
+    </table>
+</div>

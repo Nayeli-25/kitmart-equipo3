@@ -1,1 +1,222 @@
+.backgraund{
+	   background-color: rgb(51,199,255);
+}
+.mediaLuna{
+       margin-left:-500px;
+       margin-top:-5px;
+       margin-bottom:-90px;
+       width:900px;
+       height:670px;
+       border-radius:400px;
+       padding: 30px;
+	
+       }
+
+.logoKit{
+	margin-left:20px;
+	margin-top:5px;
+	width:280px;
+	height:310px ;
+}
+.formPrincipal{
+   width: 300px; 
+   margin-top:350px;margin-left:30px;
+    }
+
+.rectanguloVertical{
+	margin-right: 500px;
+}
+.ICOz{
+   width: 120px; 
+   height: 140px; 
+   margin-right: 10px;
+   margin-bottom:5px;
+	
+}
+
+
+<!--main-->
+
+.bg-main{background-color: rgb(241, 242, 242) ;
+        }
+
+.sizeMedColor{width:300px;
+              height:500px;
+             }
+
+
+.posCabecera{margin-top:-28px;
+             margin-left:-28px;
+            }
+
+.posNav{float: right;
+       }
+
+.posSocial-bar{right:0;top: 0%;
+               font-size: 1.5rem;
+             }
+
+.horigami{margin-top:60px;
+           margin-left:-420px;
+           height:490px;
+           width:800px;
+         }
+.textMain{color: rgb(32, 69, 124);
+          margin-right:-230px; 
+          text-align: justify;
+          width:450px;
+          margin-top:130px;
+        }
+.varios{margin-top:60px;
+        margin-left:-120px;
+        height:920px ;
+        width:560px;}
+.ondas{
+       margin-top:650px;
+
+}
+
+.textDoble{margin-top: 700px;
+          }
+
+.sizeTexts{width:400px;
+          }
+
+
+.imgFunc{
+  padding:10px;width:100px ;height:100px ;
+
+}
+
+.btngP{text-align: center; 
+         margin-left:-270px;
+         margin-bottom:-810px;}
+
+.btnPend{background-color: rgb(253, 163, 9);}
+
+.pPend{background-color:  rgb(249, 216, 163);
+       width:1000px;
+
+}
+
+.btngA{text-align: center;
+       margin-left:-270px;
+       margin-bottom:-924px;
+     }
+
+.btnAmb{background-color: rgb(138, 173, 59);
+
+}
+
+.pAmb{ background-color:  rgb(249, 216, 163);
+       width:1000px;
+  
+}
+
+.btngI{text-align: center; 
+          margin-left:-270px;
+          margin-bottom:-1038px;}
+
+.btnIlum{background-color: rgb(34, 217, 155);
+
+}
+
+.pIlum{background-color:  rgb(249, 216, 163);
+      width:1000px;
+  
+}
+
+.btngC{text-align: center; 
+        margin-left:-270px;
+        margin-bottom:-1152px;
+      }
+
+.btnCont{background-color: rgb(43, 170, 162);
+
+}
+
+.pCont{padding:10px;
+        width:100px ;
+        height:100px ;
+  
+}
+
+.btngM{text-align: center; 
+      margin-left:-270px;
+      margin-bottom:-1266px;
+    }
+
+
+.btnMenu{background-color: rgb(34, 70, 125);
+
+}
+
+.pMenu{background-color:  rgb(249, 216, 163);
+       width:1000px;
+  
+}
+
+
+.social-bar { position: fixed;
+      right: 0;
+        top: 35%; 
+        font-size: 1.5rem;
+
+    display: flex;  
+    flex-direction: column; 
+    align-items: flex-end;  
+    z-index: 100;}
+
+
+
+.icon { color: white; 
+  text-decoration: none;  
+  padding: .7rem; display: flex;  
+  transition: all .5s;} 
+
+.icon-facebook2 { background: #2E406E;} 
+
+.icon-users{  background: #3CB371;
+                font-family:  Arial Rounded MT Bold, Arial, Calibri;} 
+
+.icon-exit {  background: #FF8C00;
+             width: 100px;
+             height: 100px;} 
+
+.icon-user-tie{ background: #3F60A5;
+                font-family:  Arial Rounded MT Bold, Arial, Calibri;} 
+
+ .icon-search {
+ background: #2E406E;
+}
+
+.icon:first-child { border-radius: 1rem 0 0 0;} 
+
+.icon:last-child {  border-radius: 0 0 0 1rem;} 
+
+.icon:hover { padding-right: 3rem;  
+  border-radius: 1rem 0 0 1rem; 
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);}
+
+  .pie2{
+        margin-bottom:-1700px;
+        margin-left:-10px;
+        width:300px ;
+        height:300px ;
+  }
+
+.pie1{
+      margin-bottom:-1700px;
+      width:500px ;
+      height:300px ;
+}
+.p{margin-bottom:-1670px;
+   margin-left:-200px;
+   width:300px;}
+
+.Zpie{
+      margin-right:-150px;
+      margin-bottom:-1670px;
+      width:105px;
+      height:100px ;}
 /* You can add global styles to this file, and also import other style files */

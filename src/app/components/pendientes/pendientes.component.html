@@ -1,0 +1,58 @@
+<div class="container">
+<div class="row">
+
+<div class="col">
+<img src="assets/medioColoresLado.png"  class="position-absolute top-0 end-0 sizeMedColor">
+</div>
+
+<div class="col">
+<img src="/assets/penMed.png" class="posCabecera position-absolute top-0 start-50 d-none d-sm-none d-md-block">
+</div>
+
+    <div class="social-bar posSocial-bar">
+      <a href="/home" class="icon btn start-0"><img class="img" src="/assets/ICO-volver.png">volver</a>    
+     </div>
+
+
+
+<div>
+    <table class="h-100 siderBar col-md-6 scroll position-absolute start-0 top-0" >
+      <tr style="height:70px;">
+        <td  class="t1 color"><b>Lista de Tareas</b></td>
+        <td><button type="button"class="btn btnAzul btnPos text-light" data-bs-toggle="modal" data-bs-target="#exampleModal"data-whatever="agregar"><b> + </b></button></td>
+      </tr>
+      <hr>
+        <tr *ngFor="let pendiente of pendientes">
+            <td class="pend"> {{pendiente.descripcion}}</td>
+            <td>
+                <button class="btn btnPend" (click)="eliminarPendiente(pendiente._id)"><img class="imgChek" src="/assets/check1.png"></button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agregar Pendiente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="pendienteForm" (ngSubmit)="postForm(pendienteForm.value)">
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Pendiente:</label>
+                    <textarea class="form-control" id="message-text" formControlName="descripcion"></textarea>
+                </div> <br>
+                <hr>
+                <button type="submit" class="btn btn-primary btn1">Guardar</button>
+                <button type="button" class="btn btn-secondary btn1" data-bs-dismiss="modal">Cancelar</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,45 @@
+button{
+    float: right;
+}
+.btn1 {
+    margin: 1%;
+}
+.btn2 {
+    float: left;
+}
+
+.btnAzul{background-color:  rgb(34, 70, 125);}
+.color{color: rgb(34, 70, 125);}
+.sizeMedColor{width:300px;
+              height:500px;margin-left:-100px;
+             }
+
+
+.posCabecera{margin-top:-28px;
+             margin-left:-38px;
+             width:468px;
+            }
+
+  .pie2{
+        margin-bottom:-0px;
+        margin-left:-10px;
+        width:280px ;
+        height:250px ;
+  }
+
+.pie1{
+      margin-bottom:-00px;
+      width:170px ;
+      height:150px ;
+      margin-right:-10px;
+}
+
+.divForm{margin-left:200px;
+		margin-right:200px;
+		margin-bottom:200px;
+		margin-top:150px; }
+.form{width: 400px; 
+	margin-left:-200px;
+	background-color:#ced7d3;
+	border-radius:10px;
+	 padding:30px;}

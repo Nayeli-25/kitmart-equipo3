@@ -1,0 +1,69 @@
+
+<div class="background">
+<div class="container">
+  <div class="row">
+ <div class="mediaLuna position-absolute top-0 start-50 d-none d-sm-none d-md-block"></div>
+ 
+     <img src="assets/ICO-principal1.png"class="logoKit position-absolute start-50">
+  </div>   
+
+
+    <div class="formPrincipal position-absolute top-0 start-50 h-100  text-center">
+    <form
+      class="form-signin animated fadeIn"
+      autocomplete="off"
+      [formGroup]="registroForm"
+      (ngSubmit)="registro()"
+    >
+    
+      <h2 class="mb-3 font-weight-normal text-warning">Sign up</h2>
+  
+      <div>
+        <label class="sr-only text-muted" for="inputEmail">Email Address</label>
+        <input
+        type="email"
+        class="form-control mb-2"
+        id="inputEmail"
+        placeholder="Email Address"
+        formControlName="email"
+        [class.is-invalid]="emailValidate"
+        />
+        <div class="invalid-feedback">Email inválido. Ej: ejemplo@gmail.com</div>
+      </div>
+      <div>
+        <label class="sr-only text-muted" for="inputPassword">Password</label>
+        <input
+          type="password"
+          class="form-control mb-2"
+          id="inputPassword"
+          placeholder="Password"
+          formControlName="password"
+          [class.is-invalid]="passwordValidate"
+        />
+      </div>
+      <div>
+        <label class="sr-only text-muted" for="inputPassword2">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control mb-2"
+          id="inputPassword2"
+          placeholder="Confirm Password"
+          formControlName="password2"
+          [class.is-invalid]="password2Validate"
+        />
+        <div class="invalid-feedback">La contraseña no coincide con la anterior</div>
+      </div> <br>
+    
+      <button type="submit" class="btn btn-lg btn-success btn-block mb-2" [disabled]="password2Validate || emailValidate">
+        Sign up
+      </button>
+      <br>
+      <a class="fs-5" [routerLink]="['/login']">Do you have an account?</a>
+      <p class="mt-4 mb-3 text-muted">© Escuadron Z - 2021</p>
+    </form>
+  </div>
+
+</div>
+<button style="margin-top:837px;color: rgb(51,199,255);" class=" btn">hola</button>
+
+</div>

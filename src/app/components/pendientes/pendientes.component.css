@@ -1,0 +1,96 @@
+table {
+    width: 100%; 
+}
+.btn1 {
+    float: right;
+    margin: 1%;
+}
+
+
+.sizeMedColor{width:300px;
+              height:500px;margin-left:-100px;
+              margin-top: 150px;
+             }
+
+
+.posCabecera{margin-top:-28px;
+             margin-left:-350px;
+             width:650px;
+             height:350px ;
+            }
+
+  .pie2{
+        margin-bottom:-0px;
+        margin-left:-10px;
+        width:280px ;
+        height:250px ;
+  }
+
+.pie1{
+      margin-bottom:-00px;
+      width:170px ;
+      height:150px ;
+      margin-right:-10px;
+}
+.scroll{
+	overflow:scroll; 
+	display: block;
+  scroll-behavior: smooth;
+}
+
+.btnAzul{background-color:  rgb(34, 70, 125);}
+.color{color: rgb(34, 70, 125);}
+
+.posSocial-bar{right:0;
+            top: 0%;
+               font-size: 1.9rem;
+               margin-right: -13px;
+             }
+
+.siderBar{width:340px;
+          margin-left:0px;
+          margin-top:0px;
+          background-color:#e4ddb5;
+          padding:30px; 
+          border-radius:10px;
+        }
+.t1{font-size: 27px; width:210px;}
+.btnPos{border-radius:60px;
+          height:50px;
+          width:50px;
+          margin-right:-110px;
+          font-size: 20px; 
+}
+.imgChek{width: 30px;height: 30px;}
+
+.social-bar { position: fixed;
+      right: 0;
+        top: 0%; 
+        font-size: 1.9rem;
+    display: flex;  
+    flex-direction: column; 
+    align-items: flex-end;  
+    z-index: 100;}
+.pend{width: 350px; margin:30px;}
+.btnPend{ background:rgb(43, 170, 162);margin:30px;}
+
+.icon { color: white; 
+  background-color: rgb(34, 217, 155) ;
+  text-decoration: none;  
+  padding: .7rem; display: flex;  
+  transition: all .5s;
+} 
+
+
+.icon:first-child { border-radius: 1rem 0 0 0;} 
+
+.icon:last-child {  border-radius: 0 0 0 1rem;} 
+
+.icon:hover { padding-right: 3rem;  
+  border-radius: 1rem 0 0 1rem; 
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);}
+.img{
+    width:20px;
+    height: 20px;
+    margin-right: 8px;
+}
